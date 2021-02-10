@@ -106,10 +106,10 @@ public class MemberInput {
 				System.out.print(">");
 				String address = sc.next();
 				
-				//person 객체 생성
+				//객체 생성
 				MemberInfo memberinfo = new MemberInfo(name, age, email, address);
 
-				//persons 배열에 담기
+				//배열에 담기
 				//1)중복체크
 				boolean same = false;
 				for (MemberInfo m : memberinfos) {
