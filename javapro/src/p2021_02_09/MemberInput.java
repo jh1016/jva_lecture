@@ -96,15 +96,22 @@ public class MemberInput {
 				member.sys("이름을 입력하세요");
 				System.out.print(">");
 				String name = sc.next();
+				member.setName(name);
+				
 				member.sys("나이를 입력하세요");
 				System.out.print(">");
 				int age = sc.nextInt();
+				member.setAge(age);
+				
 				member.sys("이메일을 입력하세요");
 				System.out.print(">");
 				String email = sc.next();
+				member.setEmail(email);
+				
 				member.sys("주소를 입력하세요");
 				System.out.print(">");
 				String address = sc.next();
+				member.setAddress(address);
 				
 				//객체 생성
 				MemberInfo memberinfo = new MemberInfo(name, age, email, address);

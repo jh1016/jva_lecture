@@ -32,6 +32,7 @@ class Person{
 				total2 = total2 % 10; 
 			if (total2 != Integer.parseInt(num.substring(12, 13))) { 
 				// 체크용 번호와 일치하지 않을때 
+				sys();
 				System.out.println("올바른 형식의 주민등록번호가 아닙니다.");
 				sys();
 				ing();
@@ -52,6 +53,7 @@ class Person{
 	public int sc() {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
+		sc.close();
 		return a;
 	}
 	
